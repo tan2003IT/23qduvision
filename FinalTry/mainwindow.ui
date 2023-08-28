@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1209</width>
+    <height>713</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>614</width>
+    <height>384</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>祝融号图像处理器</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/qdu.jpg</normaloff>:/qdu.jpg</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget" native="true">
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0">
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,4">
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <property name="leftMargin">
+           <number>6</number>
+          </property>
+          <property name="rightMargin">
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="frame_4">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,1,5">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetDefaultConstraint</enum>
+             </property>
+             <item>
+              <widget class="QLabel" name="video_label">
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="warn_btn">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string>手动报警</string>
+               </property>
+               <property name="autoDefault">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QFrame" name="frame_3">
+               <property name="frameShape">
+                <enum>QFrame::NoFrame</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                 <widget class="QLabel" name="img1">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="img2">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="img3">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="img4">
+                  <property name="styleSheet">
+                   <string notr="true">background-clor:rgb(255, 255, 255)</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="img5">
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4" stretch="5">
+             <item>
+              <widget class="QWidget" name="widget_3" native="true">
+               <property name="layoutDirection">
+                <enum>Qt::LeftToRight</enum>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="4,1">
+                <item>
+                 <widget class="QLabel" name="main_img">
+                  <property name="styleSheet">
+                   <string notr="true">background=url(:/back.png);</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::Panel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Sunken</enum>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="pixmap">
+                   <pixmap resource="res.qrc">:/back.png</pixmap>
+                  </property>
+                  <property name="scaledContents">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="frame">
+                  <property name="frameShape">
+                   <enum>QFrame::Box</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_3" stretch="3">
+                   <item>
+                    <widget class="QFrame" name="tool_frame">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::Panel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_5">
+                      <item>
+                       <widget class="QPushButton" name="main_btn">
+                        <property name="text">
+                         <string>图像处理</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="open_btn">
+                        <property name="text">
+                         <string>打开图像</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="show_init_btn">
+                        <property name="text">
+                         <string>显示原图</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="help_btn">
+                        <property name="text">
+                         <string>帮助文档</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="rename_btn">
+                        <property name="text">
+                         <string>图像重命名</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="check_btn">
+                        <property name="text">
+                         <string>格式检查</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="cvt_btn">
+                        <property name="text">
+                         <string>灰度转换</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="rotate_btn">
+                        <property name="text">
+                         <string>图片旋转</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="ud_rev_btn">
+                        <property name="text">
+                         <string>上下翻转</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="lr_rev_btn">
+                        <property name="text">
+                         <string>左右翻转</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="ctrlZ_btn">
+                        <property name="text">
+                         <string>撤销</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="ctrlY_btn">
+                        <property name="text">
+                         <string>恢复</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="rotate90_btn">
+                        <property name="text">
+                         <string>顺时针旋转90°</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="rotate270_btn">
+                        <property name="text">
+                         <string>逆时针旋转90°</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="face_btn">
+                        <property name="text">
+                         <string>人脸识别</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="correct_btn">
+                        <property name="text">
+                         <string>图像校正</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="dis_btn">
+                        <property name="text">
+                         <string>测距</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="reset_btn">
+                        <property name="text">
+                         <string>重置</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="save_btn">
+                        <property name="text">
+                         <string>保存图片</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QPushButton" name="ex_btn">
+                        <property name="text">
+                         <string>安全退出</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1209</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_open"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionreset"/>
+    <addaction name="actionrename"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="actionWarn"/>
+    <addaction name="actioncheck"/>
+    <addaction name="action_cvt"/>
+    <addaction name="actionrotate"/>
+    <addaction name="action_fl"/>
+    <addaction name="action_rl"/>
+    <addaction name="action_ctrlz"/>
+    <addaction name="action_ctrlY"/>
+    <addaction name="action90"/>
+    <addaction name="action270"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_help"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_open">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/open.png</normaloff>:/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开图片</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/save.png</normaloff>:/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存图片</string>
+   </property>
+  </action>
+  <action name="actionreset">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/reset.png</normaloff>:/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置</string>
+   </property>
+  </action>
+  <action name="actionrename">
+   <property name="text">
+    <string>重命名图像</string>
+   </property>
+  </action>
+  <action name="action_init">
+   <property name="text">
+    <string>显示原图</string>
+   </property>
+  </action>
+  <action name="actioncheck">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/check.png</normaloff>:/check.png</iconset>
+   </property>
+   <property name="text">
+    <string>格式检查</string>
+   </property>
+  </action>
+  <action name="action_cvt">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/cvt.png</normaloff>:/cvt.png</iconset>
+   </property>
+   <property name="text">
+    <string>灰度转化</string>
+   </property>
+  </action>
+  <action name="actionrotate">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/rotate.png</normaloff>:/rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>图片旋转</string>
+   </property>
+  </action>
+  <action name="action_fl">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/udrev.png</normaloff>:/udrev.png</iconset>
+   </property>
+   <property name="text">
+    <string>上下翻转</string>
+   </property>
+  </action>
+  <action name="action_rl">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/lrrev.png</normaloff>:/lrrev.png</iconset>
+   </property>
+   <property name="text">
+    <string>左右翻转</string>
+   </property>
+  </action>
+  <action name="action_ctrlz">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/revoke.png</normaloff>:/revoke.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="action_ctrlY">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/ctrlY.png</normaloff>:/ctrlY.png</iconset>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="action90">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/rotate270.png</normaloff>:/rotate270.png</iconset>
+   </property>
+   <property name="text">
+    <string>顺时针旋转90度</string>
+   </property>
+  </action>
+  <action name="action270">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/rotate90.png</normaloff>:/rotate90.png</iconset>
+   </property>
+   <property name="text">
+    <string>逆时针旋转90度</string>
+   </property>
+  </action>
+  <action name="actionWarn">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/warn.png</normaloff>:/warn.png</iconset>
+   </property>
+   <property name="text">
+    <string>手动报警</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/help.png</normaloff>:/help.png</iconset>
+   </property>
+   <property name="text">
+    <string>帮助文档</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>back.png</file>
+        <file>background2.jpg</file>
+        <file>back222.jpg</file>
+        <file>back1.png</file>
+        <file>ALARM.wav</file>
+        <file>check.png</file>
+        <file>ctrlY.png</file>
+        <file>cvt.png</file>
+        <file>open.png</file>
+        <file>reset.png</file>
+        <file>revoke.png</file>
+        <file>rotate.png</file>
+        <file>rotate90.png</file>
+        <file>rotate270.png</file>
+        <file>save.png</file>
+        <file>udrev.png</file>
+        <file>warn.png</file>
+        <file>lrrev.png</file>
+        <file>help.png</file>
+        <file>qdu.jpg</file>
+        <file>alarm_icon.png</file>
+        <file>save_or_not.png</file>
+        <file>help_show.png</file>
+        <file>help_show00.png</file>
+        <file>haarcascade_frontalface_default.xml</file>
+    </qresource>
+</RCC>
